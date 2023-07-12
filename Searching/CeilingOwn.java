@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Ceiling {
+public class CeilingOwn {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = { 1, 2, 5, 9, 14, 16, 18 };
@@ -11,11 +11,11 @@ public class Ceiling {
     }
 
     static int ceiling(int[] arr, int target) {
-        int start = 0; 
+        int start = 0;
         int end = arr.length - 1;
         int ans = 0;
-        if(target > arr[end])
-        return -1;
+        if (target > arr[end])
+            return -1;
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (arr[mid] > target) {
@@ -31,9 +31,9 @@ public class Ceiling {
             }
 
         }
-        if(arr[ans]>target)
-        return arr[ans];
+        if (arr[ans] > target)
+            return arr[ans];
         else
-        return arr[ans+1];
+            return arr[ans + 1];
     }
 }
