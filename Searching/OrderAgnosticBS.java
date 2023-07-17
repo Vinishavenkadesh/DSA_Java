@@ -16,8 +16,8 @@ public class OrderAgnosticBS {
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (arr[mid] == target){
-                System.out.print("The index of thr element is : ");
-               return mid+1;
+                System.out.print("The index of the element is : ");
+               return mid;
             }
             if (isAsc == true) {
                 if (arr[mid] > target)
