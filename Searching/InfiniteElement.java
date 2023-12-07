@@ -14,7 +14,7 @@ public class InfiniteElement {
         while (target > arr[end]) {
 
             // start = end + 1;
-            // end = (end + 1) * 2 + 1;
+            // end = start * 2 + 1;
 
             int newStart = end + 1;
             end += (end - start + 1) * 2;
